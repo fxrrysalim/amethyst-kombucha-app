@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { createTrainedClassifier, IntentClassifier } from '@/lib/ml-utils'
 import { getGeminiAI, isGeminiAvailable } from '@/lib/gemini-ai'
 import { generateResponseWithData, buildKombuchaKnowledgeBase } from '@/lib/data-integration'
+export const runtime = 'edge';
 
 // Data pengetahuan tentang produk kombucha - Enhanced with data files
 const dynamicKnowledge = buildKombuchaKnowledgeBase()

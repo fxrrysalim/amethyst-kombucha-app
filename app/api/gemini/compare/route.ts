@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getGeminiAI, isGeminiAvailable } from '@/lib/gemini-ai'
 import { createTrainedClassifier } from '@/lib/ml-utils'
+export const runtime = 'edge';
+
 
 export async function POST(req: NextRequest) {
   try {

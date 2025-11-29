@@ -1,10 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { isGeminiAvailable } from '@/lib/gemini-ai'
+export const runtime = 'edge';
 
 export async function GET(req: NextRequest) {
   try {
     const isConnected = isGeminiAvailable()
-    
+
     const settings = {
       isEnabled: isConnected,
       model: process.env.GEMINI_MODEL || 'gemini-1.5-flash',

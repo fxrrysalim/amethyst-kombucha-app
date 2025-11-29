@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+export const runtime = 'edge';
 
 // In-memory storage for demo purposes
 // In production, use a database like PostgreSQL, MongoDB, etc.

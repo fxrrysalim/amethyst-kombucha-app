@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "bunx --b next dev --turbopack",
+    "build": "bunx --b next build --turbopack",
+    "start": "bunx --b next start",
+    "lint": "bunx --b next lint"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
